@@ -32,7 +32,7 @@ loaderScript.onload = () => {
     // Load 3D model
     const modelPath = './3dmodels/HoleHead.glb';
 
-    function loadModel(modelPath) {
+    function loadModel(path) {
         return new Promise((resolve, reject) => {
             fetch(modelPath)
                 .then(response => response.arrayBuffer())
