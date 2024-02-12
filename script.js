@@ -30,7 +30,7 @@ loaderScript.onload = () => {
     `;
 
     // Load 3D model
-    const modelPath = '3dmodels/HeadHole.glb';
+    const modelPath = '3dmodels/HoleHead.glb';
 
     function loadModel(path) {
         return new Promise((resolve, reject) => {
