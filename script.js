@@ -32,9 +32,9 @@ loaderScript.onload = () => {
     // Load 3D model
     const modelPath = '3dmodels/HoleHead.glb';
 
-    function loadModel(path) {
+    function loadModel(modelPath) {
         return new Promise((resolve, reject) => {
-            fetch(path)
+            fetch(modelPath)
                 .then(response => response.arrayBuffer())
                 .then(buffer => {
                     const loader = new THREE.GLTFLoader();
